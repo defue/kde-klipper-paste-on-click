@@ -1,0 +1,1 @@
+# kde-klipper-paste-on-click
