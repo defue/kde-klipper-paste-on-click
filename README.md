@@ -12,7 +12,7 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool)
 3. Create systemd service for ydotool:
 > replace 1000 in the code below with your uid, if it differs. You can get your uid by issuing the `id` command in the terminal
-
+Create service config
 `sudo nano /etc/systemd/system/ydotoold.service`
 ```
 [Unit]
@@ -29,7 +29,7 @@ ExecStart=/usr/bin/ydotoold -p /run/user/1000/.ydotool_socket -o 1000:1000
 [Install]
 WantedBy=multi-user.target
 ```
-- Enable and start the service
+Enable and start the service
 ```
 sudo systemctl --system daemon-reload
 sudo systemctl enable ydotoold
