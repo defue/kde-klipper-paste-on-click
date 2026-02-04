@@ -1,11 +1,11 @@
 # kde-klipper-paste-on-click
-The goal of this script is to add paste on click functionality in KDE plasma 6 Klipper app.
+The goal of this repository is to add "paste on click" functionality to KDE plasma 6 Klipper.
 
 ### How it works
-The script listens to dbus klipper clipboardHistoryUpdated event and fires the paste command via ydotool if the event came from "Clipboard Popup" or "plasmashell" windows. Tested on Debian 13.
+The script listens to dbus klipper clipboardHistoryUpdated event and fires the paste command via ydotool if the event comes from "Clipboard Popup" or "plasmashell" windows. Tested on Debian 13.
 
 ### Known issues
-- The script doesn't work when you click on the first item in the history, because clipboardHistoryUpdated event is not fired by KDE.
+- The script doesn't work when you click on the first item in the history, because it is already in the clipboard and the clipboardHistoryUpdated event is not fired by KDE.
 
 ### Installation
 1. Install [kdootool](https://github.com/jinliu/kdotool)
