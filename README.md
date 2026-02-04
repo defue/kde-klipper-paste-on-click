@@ -11,8 +11,8 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
 1. Install [kdootool](https://github.com/jinliu/kdotool)
 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool)
 3. Create systemd service for ydotool:
-[!NOTE]
 > replace 1000 in the code below with your uid, if it differs. You can get your uid by issuing the `id` command in the terminal
+
 `sudo nano /etc/systemd/system/ydotoold.service`
 paste the below content
 ```
