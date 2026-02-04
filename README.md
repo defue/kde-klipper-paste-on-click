@@ -30,8 +30,8 @@ WantedBy=multi-user.target
 ```
 - Enable and start the service
 ```
-systemctl --system daemon-reload
-systemctl enable ydotoold
-systemctl start ydotoold
+sudo systemctl --system daemon-reload
+sudo systemctl enable ydotoold
+sudo systemctl start ydotoold
 ```
 4. Download the script, make it executable and run
