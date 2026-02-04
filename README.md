@@ -14,7 +14,6 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
 > replace 1000 in the code below with your uid, if it differs. You can get your uid by issuing the `id` command in the terminal
 
 `sudo nano /etc/systemd/system/ydotoold.service`
-paste the below content
 ```
 [Unit]
 Description=ydotool daemon
