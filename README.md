@@ -1,5 +1,5 @@
 # kde-klipper-paste-on-click
-The goal of this repository is to add "paste on click" functionality to KDE plasma 6 Klipper.
+The goal of this repository is to add "paste on click" functionality to KDE plasma 6 Klipper on Wayland.
 
 ### How it works
 The script listens to dbus klipper clipboardHistoryUpdated event and fires the paste command via ydotool if the event comes from "Clipboard Popup" or "plasmashell" windows. Tested on Debian 13.
