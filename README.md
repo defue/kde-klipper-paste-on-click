@@ -13,8 +13,9 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
   * make the binary file executable: `chmod +x kdotool`
   * move it to the `usr/bin` directory: `sudo mv kdotool /usr/bin/`
 #### 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool) from your distro repository or:
-  * download the archive from the [ydotool github releases](https://github.com/ReimuNotMoe/ydotool/releases) and extract it
-  * make the ydotool and ydotoold files executable: `chmod +x ydotool*`
+  * download the `ydotool-release-ubuntu-latest` and `ydotoold-release-ubuntu-latest` files from the [ydotool github releases](https://github.com/ReimuNotMoe/ydotool/releases)
+  * rename them to `ydotool` and `ydotoold`
+  * make them executable: `chmod +x ydotool*`
   * move them to the `usr/bin` directory: `sudo mv ydotool* /usr/bin/`
 #### 3. Create systemd service for ydotool:
 * Create the ydotool service config file:
