@@ -1,8 +1,8 @@
 # kde-klipper-paste-on-click
-The goal of this repository is to add "paste on click" functionality to KDE plasma 6 Klipper on Wayland.
+The goal of this repository is to add "paste on click" functionality to KDE plasma 6 Klipper on Wayland. Tested on Debian 13.
 
 ### How it works
-The script listens to dbus klipper clipboardHistoryUpdated event and fires the paste command via ydotool if the event comes from "Clipboard Popup" or "plasmashell" windows. Tested on Debian 13.
+The script listens to dbus klipper clipboardHistoryUpdated event and fires the paste command via ydotool if the event comes from "Clipboard Popup" or "plasmashell" windows.
 
 ### Known issues
 - The script doesn't work when you click on the first item in the history, because it is already in the clipboard and the clipboardHistoryUpdated event is not fired by KDE.
@@ -11,12 +11,12 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
 #### 1. Install [kdootool](https://github.com/jinliu/kdotool) from your distro repository or:
   * download the archive from the [kdotool github releases](https://github.com/jinliu/kdotool/releases) and extract it
   * make the binary file executable: `chmod +x kdotool`
-  * move it to the `usr/bin` directory: `sudo mv kdotool /usr/bin/`
+  * move it to the `/usr/bin` directory: `sudo mv kdotool /usr/bin/`
 #### 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool) from your distro repository or:
   * download the `ydotool-release-ubuntu-latest` and `ydotoold-release-ubuntu-latest` files from the [ydotool github releases](https://github.com/ReimuNotMoe/ydotool/releases)
   * rename them to `ydotool` and `ydotoold`
   * make them executable: `chmod +x ydotool*`
-  * move them to the `usr/bin` directory: `sudo mv ydotool* /usr/bin/`
+  * move them to the `/usr/bin` directory: `sudo mv ydotool* /usr/bin/`
 #### 3. Create systemd service for ydotool:
 * Create the ydotool service config file:
 ```
