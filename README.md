@@ -8,11 +8,11 @@ The script listens to dbus klipper clipboardHistoryUpdated event and fires the p
 - The script doesn't work when you click on the first item in the history, because it is already in the clipboard and the clipboardHistoryUpdated event is not fired by KDE.
 
 ### Installation
-#### 1. Install [kdootool](https://github.com/jinliu/kdotool) from your distro repository or:
+#### 1. Install [kdootool](https://github.com/jinliu/kdotool) package from your distro repository or:
   * download the archive from the [kdotool github releases](https://github.com/jinliu/kdotool/releases) and extract it
   * make the binary file executable: `chmod +x kdotool`
   * move it to the `/usr/bin` directory: `sudo mv kdotool /usr/bin/`
-#### 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool) from your distro repository or:
+#### 2. Install [ydotool](https://github.com/ReimuNotMoe/ydotool) and ydotoold packages from your distro repository or:
   * download the `ydotool-release-ubuntu-latest` and `ydotoold-release-ubuntu-latest` files from the [ydotool github releases](https://github.com/ReimuNotMoe/ydotool/releases)
   * rename them to `ydotool` and `ydotoold`
   * make them executable: `chmod +x ydotool*`
