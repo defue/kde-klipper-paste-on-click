@@ -21,11 +21,11 @@ while read -r line; do
     if echo "$line" | grep -q "clipboardHistoryUpdated"; then
         windowname=`kdotool getactivewindow getwindowname`
         if [ "$VERBOSE" = true ]; then
-            echo "[$(date +'%H:%M:%S')] clipboardHistoryUpdated for $windowname"
+            echo "[$(date +'%H:%M:%S')] clipboardHistoryUpdated event from \"$windowname\" window"
         fi
         if [[ "$windowname" == "Clipboard Popup" || "$windowname" == "plasmashell" ]]; then
             if [ "$VERBOSE" = true ]; then
-                echo "[$(date +'%H:%M:%S')] trigger paste command"
+                echo "[$(date +'%H:%M:%S')] trigger the paste command"
             fi
             sleep 0.1 && ydotool key 42:1 110:1 110:0 42:0
         fi
